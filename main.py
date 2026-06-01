@@ -27,15 +27,10 @@ def main():
         player.draw(screen)
         pygame.display.flip()
         dt = clock.tick(60) / 1000
+        player.update(dt)
         #print (dt)
 
-def update(self, dt: float) -> None:
-    keys = pygame.key.get_pressed()
 
-    if keys[pygame.K_a]:
-        # ?
-    if keys[pygame.K_d]:
-        # ?
 
 if __name__ == "__main__":
     main()
